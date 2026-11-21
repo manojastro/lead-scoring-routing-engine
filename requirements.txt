@@ -1,0 +1,27 @@
+# File: requirements.txt
+# Pinned for reproducible builds; upgrade deliberately, run tests on bumps.
+
+# --- ML core ---
+numpy==1.26.4
+pandas==2.2.3
+scikit-learn==1.5.2
+xgboost==2.1.1
+
+# --- MLOps ---
+mlflow==2.19.0
+matplotlib==3.9.2          # confusion-matrix artifact rendering
+
+# --- API layer ---
+fastapi==0.115.5
+uvicorn[standard]==0.32.0
+pydantic==2.10.3
+pydantic-settings==2.6.1
+email-validator==2.2.0     # EmailStr support in serving/schemas.py
+
+# --- Integrations ---
+simple-salesforce==1.12.6
+snowflake-connector-python==3.12.3
+
+# --- Dev / test ---
+pytest==8.3.3
+httpx==0.28.0              # FastAPI TestClient transport
